@@ -13,7 +13,7 @@ public class Tweet implements Post {
 
 	public Tweet(String body) {
 		// TODO Auto-generated constructor stub
-		if (body.length() < this.MIN_LENGTH || body.length() > this.MAX_LENGTH) {
+		if (body.length() < Tweet.MIN_LENGTH || body.length() > Tweet.MAX_LENGTH) {
 			throw new IllegalArgumentException("El cuerpo del tweet debe tener entre 1 y 280 caracteres.");
 		}
 		
